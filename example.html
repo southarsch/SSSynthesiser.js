@@ -16,7 +16,8 @@
 			initInfo = document.getElementById("initInfo");
 			initInfo.innerHTML = 'loading...';
 			var xmlHttpRequest = new XMLHttpRequest();
-			xmlHttpRequest.open('GET', "http://molgav.nn.ru/x/sviridovtimeforward.molgav", true);
+			//xmlHttpRequest.open('GET', "http://molgav.nn.ru/x/sviridovtimeforward.molgav", true);
+			xmlHttpRequest.open('GET', "http://burkifragt.de/apocalypseNow.mid", true);
 			xmlHttpRequest.onload = function () {
 				var o = JSON.parse(xmlHttpRequest.response);
 				sssynthesiser = new SSSynthesiser(o);
